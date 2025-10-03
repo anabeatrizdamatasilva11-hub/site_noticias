@@ -38,8 +38,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 20px;
-  margin-top: 25px;
-  margin-top: 30px;
+
 }
 
 body {
@@ -103,3 +102,4 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+

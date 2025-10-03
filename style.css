@@ -102,3 +102,70 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+ main {
+  width: 80vw;
+}
+.noticia-principal img {
+  width: 100%;
+}
+
+.noticia-filme-serie {
+   width: 25.5%;
+  }
+  .noticia-filme-serie img {
+  width: 100px;
+}
+}
+
+@media (max-width: 850px) {
+    .container-notici {
+    flex-direction: column;
+    width: 95%;}
+}
+
+.noticia-filme-serie {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+
+.noticia-filme-serie img {
+width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  header nav {
+     display: none;
+  }
+  .header_mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 500px) {
+  main {
+    width: 75vw;
+  }
+  .container-noticias {
+    flex-direction: column;
+  }
+}
+
+footer {
+  padding: 20px 15px;
+  font-size: 15;
+}
+
+.título {
+  font-size: 25px;
+}
+
+.container-noticias {
+  margin-left: 20px ;
+  margin-right: 20px ;
+}
