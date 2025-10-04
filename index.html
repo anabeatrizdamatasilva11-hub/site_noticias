@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="">
   <title>Site de noticias</title>
 </head>
 <body>
   <header>
-
     <div class="header_mobile">
-  <h1 class="título">Portal Filmes & Séries</h1>
-    <img src="./Imagens/Menu.svg" alt="">
+      <h1>Portal Filmes & Séries</h1>
+      <img class="icone-menu" src="./Imagens/Menu.svg" alt="Menu">
     </div>
 
-    <div class="menu mobile">
+    <div class="menu-mobile">
       <nav>
-      <a href="">Inicío</a>
-      <a href="pagina-filmes.html">Filmes</a>
-      <a href="">Séries</a>
-      <a href="">Lançamentos</a>
-      <a href="">Contato</a>
-    </nav>
+        <a href="index.html">Inicío</a>
+        <a href="pagina-filmes.html">Filmes</a>
+        <a href="">Séries</a>
+        <a href="">Lançamentos</a>
+        <a href="">Contato</a>
+      </nav>
     </div>
-   
+
     <nav>
-      <a href="">Inicío</a>
+      <a href="index.html">Inicío</a>
       <a href="pagina-filmes.html">Filmes</a>
       <a href="">Séries</a>
       <a href="">Lançamentos</a>
@@ -70,6 +68,15 @@
     <p>&copy; 2025 Portal Filmes & Séries. Desenvolvido por Vitor Moutim.</p>
   </footer>
 </body>
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const iconeMenu = document.querySelector('.icone-menu');
+    const menuAtivo = document.querySelector('.menu-mobile');
+    iconeMenu.addEventListener('click', () => {
+      const ativo = menuAtivo.classList.toggle('menu-ativo');
+      iconeMenu.setAttribute('aria-expanded', String(ativo));
+    });
+  });
+</script>
 </html>
 
